@@ -21,6 +21,10 @@ const scroll = new LocomotiveScroll({
   const desc = document.querySelector('.description');
   const dev = document.querySelector('.developpeur');
   const prop = document.querySelector('.propos');
+  const bi = document.querySelector('.avete');
+  const bo = document.querySelector('.discuter');
+  const bob = document.querySelector('.dimi');
+  const ba = document.querySelector('.vous');
   
 
 
@@ -31,6 +35,11 @@ const scroll = new LocomotiveScroll({
       desc.textContent = data[attr].description;
       dev.textContent = dd[attr].description;
       prop.textContent = da[attr].description;
+      bi.textContent = di[attr].description;
+      bo.textContent = dod[attr].description;
+      bob.textContent = dodi[attr].description;
+      ba.textContent = dad[attr].description;
+      
     })
   });
 
@@ -85,5 +94,68 @@ const scroll = new LocomotiveScroll({
       'description': "À propos",
       },
   }
-  
-  
+  const di = { 
+    "english": 
+    {
+      'description': "Do you have a project?",
+      },
+
+    "italian": 
+    { 
+      'description': "Avete un progetto?",
+      },
+
+    'french': 
+    {
+      'description': "Vous avez un projet ?",
+      },
+  }
+  const dod = { 
+    "english": 
+    {
+      'description': "I’d be happy to",
+      },
+
+    "italian": 
+    { 
+      'description': "Sarei felice di",
+      },
+
+    'french': 
+    {
+      'description': "Je serai ravi d'en",
+      },
+  }
+  const dodi = { 
+    "english": 
+    {
+      'description': "talk about it",
+      },
+
+    "italian": 
+    { 
+      'description': "discuterne",
+      },
+
+    'french': 
+    {
+      'description': "discuter",
+      },
+  }
+
+  const dad = { 
+    "english": 
+    {
+      'description': "with you",
+      },
+
+    "italian": 
+    { 
+      'description': "con voi",
+      },
+
+    'french': 
+    {
+      'description': "avec vous",
+      },
+  }
