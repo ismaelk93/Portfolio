@@ -21,9 +21,6 @@ const scroll = new LocomotiveScroll({
   const desc = document.querySelector('.description');
   const dev = document.querySelector('.developpeur');
   const prop = document.querySelector('.propos');
-  const bi = document.querySelector('.avete');
-  const bo = document.querySelector('.discuter');
-  const ba = document.querySelector('.vous');
   
 
 
@@ -34,12 +31,6 @@ const scroll = new LocomotiveScroll({
       desc.textContent = data[attr].description;
       dev.textContent = dd[attr].description;
       prop.textContent = da[attr].description;
-      bi.textContent = di[attr].description;
-      bo.textContent = dod[attr].description;
-      ba.textContent = dad[attr].description;
-
-
-      
     })
   });
 
