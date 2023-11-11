@@ -6,7 +6,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modèle</title>
     <link rel="stylesheet" href="assets/lib/locomotive-scroll.min.css">
     <link rel="stylesheet" href="assets/styles/style.css">
   </head>
@@ -16,6 +15,11 @@
       <header data-scroll>
         <div class="links">
           <a href="#portfolio" data-scroll-to>portfolio</a>
+          <div class="languageSelection">
+            <a href="#" language="english">En</a>
+            <a href="#" language="italian">It</a>
+            <a href="#" language="french">Fr</a>
+          </div>
           <a href="mailto:ismael.koussoube@yahoo.com">contact</a>
         </div>
         <div class="wrapper">
@@ -32,6 +36,7 @@
               data-scroll-speed="6"
               data-scroll-direction="horizontal"
               data-scroll-position="left"
+              class="developpeur"
             >
               Développeur
             </h2>
@@ -49,11 +54,11 @@
             </h2>
           </div>
         </div>
-        <div class="scroll-wrapper">
+        <!-- <div class="scroll-wrapper">
           <p data-scroll data-scroll-speed="-3" data-scroll-position="top">
             please scroll
           </p>
-        </div>
+        </div> -->
       </header>
 
       <section class="about">
@@ -61,9 +66,9 @@
           <div class="img img1"></div>
         </div>
         <div data-scroll data-scroll-speed="3" class="h2-wrapper">
-          <h2>À propos</h2>
+          <h2 class="propos">À propos</h2>
         </div>
-        <p>
+        <p class="description">
           Salut! Je m’appelle Ismael Koussoube,
           j'ai 29 ans et je suis actuellement en poste en tant que Concepteur Développeur Angular/Java à Nantes.
           Passionné par les nouvelles technologies, je m'intéresse au design d'interface et leurs facultés à améliorer la productivité des entreprises.
@@ -182,12 +187,12 @@
       <footer>
         <div class="wrapper">
           <div data-scroll class="appear">
-            <p>Vous avez un projet ?</p>
+            <p class="avete">Vous avez un projet ?</p>
           </div>
         </div>
         <div class="wrapper">
           <div data-scroll class="appear" id="l2">
-            <p>
+            <p class="discuter">
               Je serai ravi d'en
               <a href="mailto:ismael.koussoube@yahoo.com">discuter</a>
             </p>
@@ -195,7 +200,7 @@
         </div>
         <div class="wrapper">
           <div data-scroll class="appear" id="l3">
-            <p>avec vous</p>
+            <p class="vous">avec vous</p>
           </div>
         </div>
         <div
