@@ -42,6 +42,8 @@ const scroll = new LocomotiveScroll({
       
     })
   });
+  
+
 
   const data = { 
     "english": 
@@ -159,3 +161,23 @@ const scroll = new LocomotiveScroll({
       'description': "avec vous",
       },
   }
+
+  // Dynamic age update based on birthday: Dec 21
+  (function updateAgeDynamically() {
+    const ageSpan = document.getElementById('age');
+    if (!ageSpan) return;
+
+    const birthAttr = ageSpan.getAttribute('data-birth');
+    // Fallback to 1993-12-21 if not provided
+    const birthDate = birthAttr ? new Date(birthAttr) : new Date('1993-12-21');
+
+    const now = new Date();
+    let age = now.getFullYear() - birthDate.getFullYear();
+
+    const hasHadBirthdayThisYear = (now.getMonth() > birthDate.getMonth()) || (now.getMonth() === birthDate.getMonth() && now.getDate() >= birthDate.getDate());
+    if (!hasHadBirthdayThisYear) {
+      age -= 1;
+    }
+
+    ageSpan.textContent = String(age);
+  })();
