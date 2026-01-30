@@ -1,234 +1,76 @@
 <!DOCTYPE html>
-
-<html lang="en"
-  class="is-smooth-scroll-compatible is-loaded is-ready has-scroll-init has-scroll-smooth">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ismael Koussoube — Développeur Front-end</title>
+    <meta name="description" content="Portfolio d'Ismael Koussoube, Développeur Front-end Angular/Java basé à Nantes">
     <meta property="og:image" content="assets/img/PHOTOISMA.jpg">
-    <meta property="og:image:alt" content="Portrait d’Ismael Koussoube — Développeur Front-end">
+    <meta property="og:image:alt" content="Portrait d'Ismael Koussoube — Développeur Front-end">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="assets/img/PHOTOISMA.jpg">
-    <meta name="twitter:image:alt" content="Portrait d’Ismael Koussoube — Développeur Front-end">
-    <link rel="stylesheet" href="assets/lib/locomotive-scroll.min.css">
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <div data-scroll-container>
-      <header data-scroll>
-        <div class="links">
-          <a href="#portfolio" data-scroll-to>portfolio</a>
-          <!-- <div class="languageSelection">
-            <a href="#" language="english">En</a>
-            <a href="#" language="italian">It</a>
-            <a href="#" language="french">Fr</a>
-          </div> -->
-          <a href="mailto:ismael.koussoube@yahoo.com">contact</a>
-        </div>
-        <div class="wrapper">
-          <div data-scroll class="appear" id="h1-wrapper">
-            <h1 data-scroll data-scroll-speed="4" data-scroll-position="left">
-              Ismael <br> Koussoube
-            </h1>
-          </div>
-        </div>
-        <div data-scroll data-scroll-repeat="true" class="wrapper" id="color">
-          <div data-scroll class="appear" id="h2-1">
-            <h2
-              data-scroll
-              data-scroll-speed="6"
-              data-scroll-direction="horizontal"
-              data-scroll-position="left"
-              class="developpeur"
-            >
-              Développeur
-            </h2>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div data-scroll class="appear" id="h2-2">
-            <h2
-              data-scroll
-              data-scroll-speed="-6"
-              data-scroll-direction="horizontal"
-              data-scroll-position="left"
-            >
-              Front-end
-            </h2>
-          </div>
-        </div>
-        <div class="scroll-wrapper">
-          <p data-scroll data-scroll-speed="-3" data-scroll-position="top">
-            please scroll
-          </p>
-        </div>
+    <main class="landing">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo">IK</div>
+        <nav class="nav">
+          <a href="mailto:ismael.koussoube@yahoo.com" class="nav-link">Contact</a>
+        </nav>
       </header>
 
-      <section class="about">
-        <div data-scroll data-scroll-speed="-1" class="img1-wrapper">
-          <div class="img img1"></div>
+      <!-- Main Content Grid -->
+      <div class="content">
+        <div class="intro">
+          <div class="photo-wrapper">
+            <img src="assets/img/photo-ismael.jpg" alt="Ismael Koussoube — Développeur Front-end à Nantes" class="photo" loading="lazy">
+          </div>
+          <h1 class="name">
+            <span class="line">Ismael</span>
+            <span class="line">Koussoube</span>
+          </h1>
+          <p class="role">Développeur Front-end</p>
+          <p class="location">Nantes, France</p>
         </div>
-        <div data-scroll data-scroll-speed="3" class="h2-wrapper">
-          <h2 class="propos">À propos</h2>
-        </div>
-        <p class="description">
-          Salut! Je m’appelle Ismael Koussoube,
-          j'ai <span id="age" data-birth="1993-12-21">31</span> ans et je suis actuellement en poste en tant que Concepteur Développeur Angular/Java à Nantes.
-          Passionné par les nouvelles technologies, je m'intéresse au design d'interface et leurs facultés à améliorer la productivité des entreprises.
-          Au fil de mes formations et de mes expériences, je me suis spécialisé dans le domaine du front-end et je souhaite approfondir mes connaissances.
-        </p>
-      </section>
 
-      <div data-scroll class="line-wrapper">
-        <div class="line"></div>
+        <div class="projects-grid">
+          <a href="https://www.julierattier-gestion.fr" target="_blank" class="project-card">
+            <span class="project-number">01</span>
+            <span class="project-title">Portfolio Assistante</span>
+            <span class="project-tech">JavaScript</span>
+          </a>
+
+          <a href="https://garage-automobile-du-tenu.fr/home" target="_blank" class="project-card">
+            <span class="project-number">02</span>
+            <span class="project-title">Garage Automobile</span>
+            <span class="project-tech">Angular</span>
+          </a>
+
+          <a href="https://stagevuejsismael.netlify.app" target="_blank" class="project-card">
+            <span class="project-number">03</span>
+            <span class="project-title">Pepenome</span>
+            <span class="project-tech">VueJs</span>
+          </a>
+        </div>
       </div>
 
-      <section class="skills">
-        <h2 class="title">
-          <span data-scroll data-scroll-speed="1">E</span>
-          <span data-scroll data-scroll-speed="0">x</span>
-          <span data-scroll data-scroll-speed="1">p</span>
-          <span data-scroll data-scroll-speed="2">e</span>
-          <span data-scroll data-scroll-speed="0">r</span>
-          <span data-scroll data-scroll-speed="1">t</span>
-          <span data-scroll data-scroll-speed="2">i</span>
-          <span data-scroll data-scroll-speed="1">s</span>
-          <span data-scroll data-scroll-speed="0">e</span>
-        </h2>
-
-        <div class="wrapper">
-          <div data-scroll class="appear">
-            <p
-              data-scroll
-              data-scroll-speed="-2"
-              data-scroll-direction="horizontal"
-            >
-              VueJs
-            </p>
-          </div>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="skills">
+          <span>Angular</span>
+          <span>VueJs</span>
+          <span>Tailwind</span>
         </div>
-        <div class="wrapper">
-          <div data-scroll class="appear">
-            <p
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="horizontal"
-            >
-              Angular
-            </p>
-          </div>
+        <div class="social">
+          <a href="mailto:ismael.koussoube@yahoo.com" class="footer-link">Email</a>
         </div>
-        <div class="wrapper">
-          <div data-scroll class="appear">
-            <p
-              data-scroll
-              data-scroll-speed="-6"
-              data-scroll-direction="horizontal"
-            >
-              Tailwind
-            </p>
-          </div>
-        </div>
-        <!-- <div class="wrapper">
-          <div data-scroll class="appear">
-            <p
-              data-scroll
-              data-scroll-speed="3"
-              data-scroll-direction="horizontal"
-            >
-              SEO
-            </p>
-          </div>
-        </div> -->
-      </section>
-
-      <div data-scroll class="line-wrapper">
-        <div class="line"></div>
-      </div>
-
-      <section class="portfolio" id="portfolio">
-        <h2 class="title">
-          <span data-scroll data-scroll-speed="1">P</span>
-          <span data-scroll data-scroll-speed="0">o</span>
-          <span data-scroll data-scroll-speed="1">r</span>
-          <span data-scroll data-scroll-speed="2">t</span>
-          <span data-scroll data-scroll-speed="0">f</span>
-          <span data-scroll data-scroll-speed="1">o</span>
-          <span data-scroll data-scroll-speed="2">l</span>
-          <span data-scroll data-scroll-speed="1">i</span>
-          <span data-scroll data-scroll-speed="0">o</span>
-        </h2>
-        <div class="projects-container">
-
-          <div data-scroll data-scroll-speed="1" class="project" id="p2">
-            <img src="./assets/img/capture-ecran-2025-09-13-11-23-54.png" alt="projet 3" />
-            <div class="project-infos">
-              <a href="https://www.julierattier-gestion.fr" target="_blank">Portfolio Assistante de Gestion</a>
-              <p>Js</p>
-            </div>
-          </div> 
-        
-          <div data-scroll data-scroll-speed="1" class="project" id="p1">
-            <img src="./assets/img/garage-logo.png" alt="projet 2" />
-            <div class="project-infos">
-              <a href="https://garage-automobile-du-tenu.fr/home" target="_blank">Garage Automobile</a>
-              <p>Angular</p>
-            </div>
-          </div>
-
-          <div data-scroll data-scroll-speed="1" class="project" id="p2">
-            <video autoplay="autoplay" muted="" loop="infinite" src="assets/img/videopepenome.mp4" alt="projet 1"></video>
-            <div class="project-infos">
-              <a href="https://stagevuejsismael.netlify.app" target="_blank">Pepenome</a>
-              <p>VueJs</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div data-scroll class="line-wrapper">
-        <div class="line"></div>
-      </div>
-
-      <footer>
-        <div class="wrapper">
-          <div data-scroll class="appear">
-            <p class="avete">Vous avez un projet ?</p>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div data-scroll class="appear" id="l2">
-            <p class="discuter">
-              Je serai ravi d'en
-              <a href="mailto:ismael.koussoube@yahoo.com" class="dimi">discuter</a>
-            </p>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div data-scroll class="appear" id="l3">
-            <p class="vous">avec vous</p>
-          </div>
-        </div>
-        <div
-          data-scroll
-          data-scroll-speed="7"
-          data-scroll-position="bottom"
-          class="img-wrapper"
-        >
-          <!-- <div class="img img2"></div> -->
-        </div>
-        <br /><br /><br />
       </footer>
-    </div>
-
-    <script src="./assets/lib/locomotive-scroll.min.js"></script>
-    <script src="./assets/js/index.js"></script>
+    </main>
   </body>
 </html>
-
-
-
-
-
